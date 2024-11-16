@@ -18,7 +18,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "👋 *Привет!*\n\n"
         "Отправь мне два текста по очереди, и я покажу, чем они отличаются.. "
         "Используйте кнопки ниже для управления.",
-        parse_mode="Markdown",  # Используемd Markdown
+        parse_mode="Markdown",  # Используемd Msarkdown
         reply_markup=reply_markup
     )
 
@@ -59,7 +59,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             reply_markup=reply_markup
         )
 
-        texts.pop(user_id)  # Очистка данных после сравнения
+        texts.pop(user_id)  # Очистка данных посjgit branchле сравнения
     else:
         await update.message.reply_text("❗ Что-то пошло не так. Напишите /reset, чтобы начать заново.")
 
