@@ -59,7 +59,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             reply_markup=reply_markup
         )
 
-        texts.pop(user_id)  # Очистка данных посjgit branchле сравнения
+        texts.pop(user_id)  # Очистка данных посjgit branchле сравнnения
     else:
         await update.message.reply_text("❗ Что-то пошло не так. Напишите /reset, чтобы начать заново.")
 
