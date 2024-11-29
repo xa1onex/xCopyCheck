@@ -34,7 +34,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if user_id not in texts:
         texts[user_id] = [text]
         await update.message.reply_text(
-            "✅ Первый текст сохранен! Теперь отправьте второй текст."
+            "✅ Первый текст сохранен. Теперь отправьте второй текст."
         )
     elif len(texts[user_id]) == 1:
         texts[user_id].append(text)
