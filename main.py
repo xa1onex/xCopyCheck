@@ -2,7 +2,7 @@ from telegram import Update, ReplyKeyboardMarkup, KeyboardButton
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 import difflib
 
-# Хранение текстов для сравнения 1
+# Хранение текстов для сравнения 2
 texts = {}
 
 # Команда /start
