@@ -82,7 +82,7 @@ def compare_texts(text1, text2):
 
 # Основная функция
 def main():
-    app = Application.builder().token("").build()
+    app = Application.builder().token("7709470340:AAH3M8YTcub5-6zUO0rOr6TwJloF448DjsE").build()
     app.add_handler(CommandHandler("start", start))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
     app.run_polling(drop_pending_updates=True)
