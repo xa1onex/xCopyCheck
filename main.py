@@ -34,7 +34,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if user_id not in texts:
         texts[user_id] = [text]
         await update.message.reply_text(
-            "✅ Первый текст сохранен. Теперь отправьте второй текст."
+            "✅ Первый текст сохранен! Теперь отправьте второй текст."
         )
     elif len(texts[user_id]) == 1:
         texts[user_id].append(text)
@@ -82,7 +82,7 @@ def compare_texts(text1, text2):
 
 # Основная функция
 def main():
-    app = Application.builder().token("7709470340:AAH3M8YTcub5-6zUO0rOr6TwJloF448DjsE").build()
+    app = Application.builder().token("7709470340:AAH3M8YTcub5-6zUO0rOr6TwJloF448Djs").build()
     app.add_handler(CommandHandler("start", start))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
     app.run_polling(drop_pending_updates=True)
