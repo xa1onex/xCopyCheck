@@ -67,7 +67,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     else:
         await update.message.reply_text("❗ Что-то пошло не так. Напишите /reset, чтобы начать заново.")
 
-# Сравнение текстов с подчеркиванием различий
+# Сравнение текстов с подчеркиванием различийq
 def compare_texts(text1, text2):
     diff = difflib.ndiff(text1, text2)
     result = []

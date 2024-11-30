@@ -9,7 +9,7 @@ def github_webhook():
     data = request.get_json()
 
     # Проверка, что это событие push в главную ветку
-    if data['ref'] == 'refs/heads/main':  # Убедись, что это push в главную ветку
+    if data['ref'] == 'refs/heads/main':  # Убедись, что это push в главную ветку k
         print("Обновление репозитория...")
         # Обновляем локальный репозиторий
         subprocess.run(['git', 'pull', 'origin', 'main'])
